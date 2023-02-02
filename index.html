@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        background-image: url(images/background.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        font-family: Arial, sans-serif;
+        text-align: center;
+      }
+      @keyframes flyin {
+        0% {
+          transform: translateY(-100px);
+          opacity: 0;
+        }
+        100% {
+        transform: translateY(0);
+        opacity: 1;
+        }
+      }
+      h1 {
+        color: #e8edea;
+        font-size: 36px;
+        margin: 20px 0;
+        opacity: 0;
+        animation: flyin 2s forwards;
+      }
+      p {
+        color: #e8edea;
+        font-size: 18px;
+        margin: 20px 0;
+        opacity: 0;
+        animation: flyin 2s forwards;
+      }
+      .btn {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 18px;
+        margin: 0 10px;
+        opacity: 0;
+        animation: flyin 2s forwards;
+      }
+      .btn:hover {
+        background-color: #666;
+      }
+      @media (max-width: 767px) {
+        h1 {
+          font-size: 28px;
+        }
+        p {
+          font-size: 16px;
+        }
+        .btn {
+          font-size: 16px;
+        }
+      }
+    </style>
+
+    <title>RatherSilly</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+    <meta property="og:site_name" content="Super Silly Network News">
+    <meta property="og:image" content="https://media.discordapp.net/attachments/1023824841998090251/1026228034530975774/IMG_4605.png">
+    <meta name="keywords" content="cats, cat, landing page, forum, media">
+  </head>
+  <body>
+    <div style="top: 50%; left: 50%; transform: translate(-50%,-50%); position: absolute;">
+      <h1>Welcome to Rather Silly!</h1>
+      <p>Not much here, but there are a few places you can go.</p>
+      <div style="display: flex; justify-content: center;">
+        <a href="https://rathersilly.net/movies" class="btn">Movies</a>
+        <a href="https://rathersilly.net/domstutorials" class="btn">DomsTutorials</a>
+        <a href="https://rathersilly.net/starglitcher" class="btn">StarGlitcher</a>
+        <a href="https://discord.gg/dVQmgcZWsB" class="btn">Discord</a>
+      </div>
+    </div>
+  </body>
+</html>
