@@ -48,6 +48,10 @@
       .btn:hover {
         background-color: #666;
       }
+      .btn-container {
+        display: flex;
+        justify-content: center;
+      }
       @media (max-width: 767px) {
         h1 {
           font-size: 28px;
@@ -57,6 +61,11 @@
         }
         .btn {
           font-size: 16px;
+          margin-bottom: 10px;
+        }
+        .btn-container {
+          flex-direction: column;
+          align-items: center;
         }
       }
     </style>
@@ -72,10 +81,10 @@
     <div style="top: 50%; left: 50%; transform: translate(-50%,-50%); position: absolute;">
       <h1>Welcome to Rather Silly!</h1>
       <p>Not much here, but there are a few places you can go.</p>
-      <div style="display: flex; justify-content: center;">
+      <div class="btn-container">
         <a href="https://rathersilly.net/movies" class="btn">Movies</a>
-        <a href="https://rathersilly.net/domstutorials" class="btn">DomsTutorials</a>
-        <a href="https://rathersilly.net/starglitcher" class="btn">StarGlitcher</a>
+        <a href="https://rathersilly.net/domstutorials" class="btn">Doms Tutorials</a>
+        <a href="https://rathersilly.net/starglitcher" class="btn">Star Glitcher</a>
         <a href="https://discord.gg/dVQmgcZWsB" class="btn">Discord</a>
       </div>
     </div>
